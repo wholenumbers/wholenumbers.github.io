@@ -27,8 +27,10 @@ jQuery(function ($) {
 
 
     $(window).on('scroll', function () {
+        
         if ($(this).scrollTop() > 250) { // Set position from top to add class
             $('header').addClass('header-appear');
+            $('img').removeClass('logo-change-color')
         }
         else {
             $('header').removeClass('header-appear');
